@@ -28,6 +28,8 @@ WHERE TABLE_TYPE ='BASE TABLE'
 | Northwind| dbo    | Products        | BASE TABLE|
 | Northwind| dbo    | Order Details   | BASE TABLE|
 
+
+![contry map](img/map.png)
 <br>
 
 -----
@@ -124,6 +126,7 @@ ORDER BY 4 DESC
 | 62         | Tarte au sucre        | Confections     | 1083  |
 | 2          | Chang                 | Beverages       | 1057  |
 
+![contry map](img/quantity_category.png)
 <br>
 
 ---
@@ -141,6 +144,8 @@ GROUP BY CASE WHEN TitleOfCourtesy = 'Mr.' THEN 'male' ELSE 'female' END
 | ---   |:-------------------:|
 |female	|      5              |
 |male	|         3           |
+
+![contry map](img/gender.png)
 <br>
 
 *Let's see our sales persons with their number of sale made*
@@ -163,6 +168,8 @@ ORDER BY  4 DESC
 | Robert    | King      | Sales Representative   | 72                   |
 | Michael   | Suyama    | Sales Representative   | 67                   |
 | Anne      | Dodsworth | Sales Representative   | 43                   |
+
+![contry map](img/employees_sales.png)
 <br>
 
 number of employees in each rigion
@@ -275,6 +282,8 @@ ORDER BY 1
 | 1996 | 405              |
 | 1997 | 1059             |
 | 1998 | 691              |
+
+![contry map](img/OrdersInYears.png)
 
 Now we look more at the year **1997** 
 ```SQL
