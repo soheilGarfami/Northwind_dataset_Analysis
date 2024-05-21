@@ -29,7 +29,6 @@ WHERE TABLE_TYPE ='BASE TABLE'
 | Northwind| dbo    | Order Details   | BASE TABLE|
 
 
-![contry map](img/map.png)
 <br>
 
 -----
@@ -55,6 +54,7 @@ the top six row would be :
 | UK         | 7        | 56      |
 | Mexico     | 5        | 28      |
 
+![contry map](img/map.png)
 <br>
 
 ---
