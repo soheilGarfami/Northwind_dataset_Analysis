@@ -9,7 +9,7 @@ The primary objective of this project is to showcase my SQL skills and analytica
 ***What is Northwind dataset ?***
 The Northwind dataset is a comprehensive fictional database representing the operations of a trading company, encompassing information on customers, products, orders, suppliers, and employees. It serves as a valuable resource for database management, analysis, and learning purposes, providing a simulated yet realistic environment for exploring business scenarios and conducting data-driven investigations.
 
- *now lets have an over view of our tables*
+ *now lets have an overview of our tables*
 ```SQL
 SELECT * FROM INFORMATION_SCHEMA.TABLES 
 WHERE TABLE_TYPE ='BASE TABLE'
@@ -36,7 +36,7 @@ WHERE TABLE_TYPE ='BASE TABLE'
 <br>
 <br>  
 
-***Let's see our costumers are from wich countries***
+***Let's see which countries our customers are from.***
 
 ```sql
 SELECT ShipCountry  , COUNT(DISTINCT CustomerID) AS Number_of_Cuetomers, COUNT(OrderID) Number_Of_orders
@@ -61,8 +61,8 @@ the top six row would be :
 <br>
 <br>  
 
-***let's see our most profitable costumers***  
-also we will take look at their countries and cities 
+***Let's identify our most profitable customers.***  
+We will also take a look at their countries and cities.
 
 ```sql 
 WITH temp AS 
@@ -97,9 +97,8 @@ the top ten row would be :
 <br>
 <br>  
 
-***now lest take look at our most popular products***  
-the row 'total' here indicate the total number of sold 
-
+***Now let's take a look at our most popular products.***  
+The 'total' column here indicates the total number of units sold.  
 ```sql 
 WITH joinedOrders AS (
 SELECT b.* , c.ProductID , c.Quantity FROM  Orders  B JOIN [Order Details]  C ON B.OrderID = C.OrderID
@@ -133,7 +132,7 @@ ORDER BY 4 DESC
 <br>
 <br>  
 
-***Now let's take a look at our employees***
+***Now let's take a look at our employees.***
 ```sql
 SELECT  CASE WHEN TitleOfCourtesy = 'Mr.' THEN 'male' ELSE 'female' END AS  gender, 
 COUNT(*) AS number_of_employees FROM Employees  
